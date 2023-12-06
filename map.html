@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map | Tutorialing</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <style>
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <label for="places">Select a place:</label>
+  <select id="places" onchange="onPlaceSelected()">
+    <option value="8.5241,76.9366">Trivandrum</option>
+    <option value="10.8505,76.2711">Cochin</option>
+    <option value="8.5080, 76.8887">Veli Turiste Village</option>
+    <option value="8.0844, 77.5495">Kannayakumari</option>
+    <!-- Add more places as needed -->
+  </select>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+<script>
+  var map = L.map('map').setView([8.5241, 76.9366], 10); // Default view centered on Trivandrum
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  var userMarker = L.marker([0, 0], { draggable: true })
+    .addTo(map)
+    .bindPopup('Your Location');
+
+  var routingControl;
+  var plannedRoute;
+  var roundaboutAlertThreshold = 0.05; // Adjust as needed
+
+  function onMarkerDrag(e) {
+    var marker = e.target;
+    var position = marker.getLatLng();
+    checkOffRoute(position);
+    calculateRoute(position.lat, position.lng);
+  }
+
+  userMarker.on('dragend', onMarkerDrag);
+
+  function addDestinationMarker(lat, lng) {
+    L.marker([lat, lng]).addTo(map).bindPopup('Destination');
+  }
+
+  function calculateRoute(destLat, destLng) {
+    if (routingControl) {
+      map.removeControl(routingControl);
+    }
+    routingControl = L.Routing.control({
+      waypoints: [
+        L.latLng(userMarker.getLatLng().lat, userMarker.getLatLng().lng),
+        L.latLng(destLat, destLng)
+      ],
+      routeWhileDragging: true,
+    }).addTo(map);
+
+    plannedRoute = routingControl.getWaypoints();
+  }
+
+  function onPlaceSelected() {
+    var selectedPlace = document.getElementById('places').value.split(',');
+    var destLat = parseFloat(selectedPlace[0]);
+    var destLng = parseFloat(selectedPlace[1]);
+    addDestinationMarker(destLat, destLng);
+    calculateRoute(destLat, destLng);
+  }
+
+  function checkOffRoute(currentPosition) {
+    if (!plannedRoute) return;
+
+    var currentPoint = L.latLng(currentPosition.lat, currentPosition.lng);
+    var closestPointOnRoute = L.GeometryUtil.closest(map, plannedRoute, currentPoint);
+    var distance = currentPoint.distanceTo(closestPointOnRoute.latLng);
+
+    if (distance > roundaboutAlertThreshold) {
+      alert('You are off-route!');
+      // Perform actions when off-route (e.g., display alert, change marker color, etc.)
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      var userLat = position.coords.latitude;
+      var userLng = position.coords.longitude;
+      userMarker.setLatLng([userLat, userLng]);
+      map.setView([userLat, userLng], 10);
+    },
+    function (error) {
+      console.error('Error getting user location:', error.message);
+    }
+  );
+
+</script>
+
+</body>
+</html>
