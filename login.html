@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      label,
+      input,
+      button {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+        <section class="form_container">
+            <div class="top">
+                <h5>Login Page</h5>
+                <h3>Login to user fata map.(user123 pass123)</h3>
+            </div>
+            <div class="bottom">
+                <form action="" method="post" id="authForm">
+                    <div class="input_container">
+                        <label for="id_username"> Username </label>
+                        <input id="id_username" name="username" type="text" />
+                    </div>
+                    <div class="input_container">
+                        <label for="id_password"> Password </label>
+                        <input id="id_password" name="password" type="password" />
+                    </div>
+                    <div class="submit_container">
+                        <p id="authResult"></p>
+                        <button type="button" onclick="authenticateUser()">Log in</button>
+
+                        <a href="">Create Account</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    <script>
+      function authenticateUser() {
+        const username = document.getElementById("id_username").value;
+        const password = document.getElementById("id_password").value;
+
+        const validUsername = "user123";
+        const validPassword = "pass123";
+        const validUsername2 = "sri";
+        const validPassword2 = "2012";
+
+        if (username === validUsername && password === validPassword) {
+          displayAuthenticationResult(true);
+        } else {
+          displayAuthenticationResult(false);
+        }
+        if (username === validUsername2 && password === validPassword2) {
+          displayAuthenticationResult(true);
+        } else {
+          displayAuthenticationResult(false);
+        }
+      }
+
+      function redirectTo(url) {
+            window.location.href = url;
+        }
+      function displayAuthenticationResult(isAuthenticated) {
+        const authResultContainer = document.getElementById("authResult");
+        authResultContainer.innerHTML = "";
+
+        const resultMessage = document.createElement("p");
+
+        if (isAuthenticated) {
+          resultMessage.textContent =
+            alert("Sucesfully Login")
+            redirectTo('/map.html');
+        } else {
+          resultMessage.textContent =
+            "Authentication failed. Please check your credentials.";
+        }
+
+        authResultContainer.appendChild(resultMessage);
+      }
+    </script>
+  </body>
+</html>

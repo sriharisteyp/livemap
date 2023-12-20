@@ -1,0 +1,2734 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ibm_plex_sans_thai_loopedRg";
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: "ibm_plex_sans_thai_loopedbold";
+    src: url("../fonts/ibmplexsansthailooped-bold-webfont.woff2")
+            format("woff2"),
+        url("../fonts/ibmplexsansthailooped-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ibm_plex_sans_thai_loopedRg";
+    src: url("../fonts/ibmplexsansthailooped-regular-webfont.woff2")
+            format("woff2"),
+        url("../fonts/ibmplexsansthailooped-regular-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+section.container {
+    min-height: 100vh;
+    background-color: #212121;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding-top: 80px;
+}
+section.container section.form_container {
+    width: 400px;
+}
+
+section.container section.form_container div.top {
+    background: #417690;
+    padding: 15px 0;
+}
+section.container section.form_container div.top h5 {
+    color: #fff;
+    text-align: center;
+}
+section.container section.form_container div.bottom {
+    padding: 25px 20px;
+    background: #121212;
+}
+section.container section.form_container div.bottom form {
+}
+section.container section.form_container div.bottom form div.input_container {
+    margin-bottom: 20px;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.input_container
+    label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.input_container
+    input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #353535;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+section.container section.form_container div.bottom form div.submit_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    button {
+    padding: 8px 20px;
+    background: #609ab6;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    a {
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    p.error-message,
+section.form_container div.bottom form div.submit_container .errorlist {
+    color: #999;
+    width: 100%;
+    margin: 10px 0;
+    list-style: none;
+}
+
+header {
+    padding: 25px 0;
+}
+header section.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+header section.wrapper h1 {
+    height: 60px;
+}
+header section.wrapper h1 a {
+    display: block;
+}
+header section.wrapper h1 a img {
+    display: inline-block;
+    max-width: 100%;
+    height: 60px;
+}
+header section.wrapper div.right a {
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    background: #609ab6;
+    border: none;
+}
+header div.right span {
+    margin-right: 15px;
+}
+section.main {
+    margin-top: 60px;
+}
+section.main h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+section.main div.form {
+    margin: 30px 0;
+}
+section.main div.form div.input_container {
+    margin-bottom: 20px;
+}
+section.main div.form div.input_container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section.main div.form div.input_container input,
+section.main div.form div.input_container select,
+section.main div.form div.input_container textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #353535;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+section.main div.form div.input_container textarea {
+    resize: none;
+}
+
+section.main div.form div.submit_container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+section.main div.form div.submit_container button {
+    padding: 8px 20px;
+    background: #609ab6;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+section.main div.form div.submit_container p.error-message,
+section.main div.form div.submit_container .errorlist {
+    color: #444;
+    width: 100%;
+    margin: 10px 0;
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Gordita Regular";
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+body {
+    font-size: 17px;
+    color: #1c2c40;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
+}
+
+input,
+textarea,
+select {
+    font-weight: 400;
+}
+
+a {
+    color: #1c2c40;
+}
+
+a:hover,
+.submit:hover {
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+
+.thumb {
+    display: block;
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
+}
+
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+@font-face {
+    font-family: "Gordita Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gordita Regular"),
+        url("../fonts/Gordita Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gordita Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gordita Medium"), url("../Gordita Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Gordita Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Gordita Bold"), url("../Gordita Bold.woff") format("woff");
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#home,
+#single-page-home {
+    padding: 20px 0 50px;
+    position: relative;
+}
+
+#single-page-home section.wrapper {
+    max-width: 1280px;
+}
+
+#home .wrapper {}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+header h1 {
+    width: 150px;
+}
+
+header h1 a {
+    display: block;
+}
+
+header a.login {
+    background-color: #5aab7b;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+header a.login.my-posts {
+    margin: 0 15px 0 auto;
+}
+
+header div#hamburger-icon {
+    display: none;
+}
+
+#home section.spotlight {}
+
+#home section.spotlight h3 {
+    font-size: 30px;
+    margin-bottom: 1%;
+    color: #000;
+    display: inline-block;
+}
+
+#home section.spotlight div.all-posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+#home section.spotlight div.all-posts div.post-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#home section.spotlight div.all-posts ul.posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+#home section.spotlight div.all-posts ul.posts li {
+    width: 31%;
+    margin-bottom: 3%;
+}
+
+#home section.spotlight div.all-posts ul.posts li:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.blog-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details div.date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details div.date h4.name {
+    font-size: 18px;
+    margin-right: 25px;
+    color: #5aaa7b;
+    font-weight: 700;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details div.date div.round {
+    background: #5bab7b;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details div.date span {
+    color: #5bab7b;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details h3.head {
+    margin-bottom: 2%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4f5757;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details h3.head a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details p.description {
+    color: #5e5e5e;
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.bottom {
+    display: flex;
+    margin-bottom: -10px;
+    flex-wrap: wrap;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design {
+    display: block;
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: #5bab7b;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #5bab7b;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.one {
+    color: #5bab7b;
+    border: 2px solid #5bab7b;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.two {
+    border: 2px solid #E91E63;
+    color: #E91E63;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.three {
+    border: 2px solid #1E88E5;
+    color: #1E88E5;
+}
+
+#home section.spotlight div.all-posts ul.posts li div.details div.bottom a.design:last-child {
+    margin-right: 0px;
+}
+
+#home section.spotlight div.all-posts div.filter-section {
+    width: 20%;
+    padding: 0 0 0 3%;
+}
+
+#home div#overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    right: -100%;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s;
+    top: 0;
+}
+
+#home div#overlay.active {
+    right: 0;
+}
+
+#home div#close {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out 0s;
+    top: 25px;
+    border-radius: 50%;
+}
+
+#home section.spotlight div.all-posts div.filter-section form {
+    width: 100%;
+}
+
+#home section.spotlight div.all-posts div.filter-section form input[type="text"] {
+    border: 2px solid #5e5e5e;
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8%;
+    border-radius: 8px;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter {
+    padding: 0 0 0 10%;
+    margin-bottom: 5%;
+}
+
+#home section.spotlight div.all-posts div.filter-section form p.filter-head {
+    font-size: 18px;
+    color: #5e5e5e;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio {
+    color: #4f5757;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 35px;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label span {
+    color: #4f5757;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    left: -2000px;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio input:checked~.radio {
+    background-color: #fff;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio input:checked~.radio::after {
+    opacity: 1;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio input:checked~.label {
+    opacity: 1;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #0ac07d;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.radio .radio::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0ac07d;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.checkbox {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter label.checkbox input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ac07d;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: #0ac07d;
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+#home section.spotlight div.all-posts div.filter-section form div.filter input[type="checkbox"] {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+#home section.spotlight div.all-posts div.filter-section form input[type="submit"] {
+    background-color: #5aab7b;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+div.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #f5f5f5;
+    padding-top: 20px;
+}
+
+div.pagination a.prev {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #5e5e5e;
+    font-weight: 700;
+}
+
+div.pagination a.prev span,
+div.pagination .disabled.prev span {
+    transform: rotate(90deg);
+    margin-right: 10px;
+    width: 15px;
+}
+
+div.pagination a.next,
+div.pagination .disabled {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #5e5e5e;
+}
+
+div.pagination a.next span,
+div.pagination .disabled.next span {
+    transform: rotate(-90deg);
+    margin-left: 10px;
+    width: 15px;
+}
+
+div.pagination .disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+div.pagination div.pages {
+    display: flex;
+    align-items: center;
+}
+
+div.pagination div.pages span.active {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5aab7b;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+div.pagination div.pages a {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+div.pagination div.pages a:hover {
+    background: #c9eee4;
+}
+
+/* index-page css  completed */
+
+#single-page-home {}
+
+#single-page-home section.single-page-spotlight {}
+
+#single-page-home section.single-page-spotlight div.blog-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#single-page-home section.single-page-spotlight div.blog-category span.category {
+    background: #c9eee4;
+    border-radius: 20px;
+    padding: 7px 16px;
+    text-align: center;
+    color: #5bab7b;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+#single-page-home section.single-page-spotlight div.blog-category span.read {
+    color: #fac92a;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#single-page-home section.single-page-spotlight div.blog-category span.read span.clock {
+    margin-right: 10px;
+    margin: 0 10px 3px 0;
+}
+
+#single-page-home section.single-page-spotlight h3.title {
+    font-family: "Gordita Medium";
+    margin-bottom: 2%;
+    font-size: 40px;
+    display: inline-block;
+}
+
+#single-page-home section.single-page-spotlight p.description {
+    font-size: 18px;
+    color: #a3a2a2;
+    font-weight: 700;
+    margin-bottom: 2%;
+    line-height: 1.8em;
+}
+
+#single-page-home section.single-page-spotlight div.post-thumbnail {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+#single-page-home section.single-page-spotlight div.details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#single-page-home section.single-page-spotlight div.details span.published {
+    margin-right: 3%;
+}
+
+#single-page-home section.single-page-spotlight div.details span.published p.written {
+    color: #5bab7b;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#single-page-home section.single-page-spotlight div.details span.published p.name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4f5757;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social li {
+    margin-right: 25px;
+    border: 2px solid #9aa3b2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social li.social-media {
+    width: 50px;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social li:last-child {
+    margin-right: 0;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social li a {
+    display: flex;
+    align-items: center;
+    color: #797979;
+    font-weight: 700;
+}
+
+#single-page-home section.single-page-spotlight div.details ul.social li a span.link {
+    margin-right: 15px;
+    width: 20px;
+}
+
+#single-page-home section.single-page-spotlight p.detailed-description {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 700;
+}
+
+#single-page-home section.single-page-spotlight div.detailed-description p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+#single-page-home section.single-page-spotlight div.detailed-description strong {
+    font-weight: 700;
+}
+
+/* single-page css  completed */
+#edit-post-home {
+    padding: 3% 0 5%;
+    position: relative;
+}
+
+#edit-post-home .wrapper {}
+
+#edit-post-home section.spotlight {}
+
+#edit-post-home section.spotlight h3 {
+    font-size: 30px;
+    margin-bottom: 2%;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#edit-post-home section.spotlight form {}
+
+#edit-post-home form div.form-field {
+    margin-bottom: 30px;
+}
+
+#edit-post-home section.spotlight form div.title {
+    position: relative;
+    width: 100%;
+    border: 2px solid #949494;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 3%;
+}
+
+#edit-post-home section.spotlight form div.title input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3f3f3f;
+}
+
+#edit-post-home section.spotlight form div.title label {
+    position: absolute;
+    top: -15%;
+    padding: 2px 15px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    left: 3%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#edit-post-home section.spotlight form label.subheads {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+
+#edit-post-home section.spotlight form div.description {
+    width: 100%;
+    border: 2px solid #949494;
+    border-radius: 6px;
+    margin-bottom: 3%;
+}
+
+#edit-post-home section.spotlight form div.description div.top {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #949494;
+    padding: 10px;
+}
+
+#edit-post-home section.spotlight form div.description div.top div.paragraph {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+    border-right: 2px solid #949494;
+    padding: 10px 20px;
+}
+
+#edit-post-home section.spotlight form div.description div.top div.paragraph p {
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+#edit-post-home section.spotlight form div.description div.top div.paragraph span.arrow {
+    transform: rotate(180deg);
+    width: 15px;
+}
+
+#edit-post-home section.spotlight form div.description div.top div.paragraph span.arrow img {
+    filter: invert(1);
+}
+
+#edit-post-home section.spotlight form div.description textarea {
+    width: 100%;
+    font-size: 20px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+#edit-post-home section.spotlight form div.description p.bottom {
+    border-top: 2px solid #949494;
+    padding: 20px 30px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+#edit-post-home section.spotlight form .input {
+    border: 2px solid #949494;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3f3f3f;
+    border-radius: 10px;
+}
+
+#edit-post-home section.spotlight form label.checkbox {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#edit-post-home section.spotlight form label.checkbox span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+
+#edit-post-home section.spotlight form label.checkbox input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ac07d;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+#edit-post-home section.spotlight form input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: #0ac07d;
+}
+
+#edit-post-home section.spotlight form input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+#edit-post-home section.spotlight form input[type="checkbox"] {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+/* lkdhfjdhfjhdfjdfh */
+#edit-post-home section.spotlight form input[type="submit"] {
+    background-color: #5aab7b;
+    width: 10%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#edit-post-home section.spotlight form label {
+    color: #3f3f3f;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ck.ck-label.ck-voice-label {
+    display: none !important;
+}
+
+/* editpost-page css  completed */
+
+#my-posts-home {
+    padding: 3% 0 5%;
+    position: relative;
+}
+
+#my-posts-home .wrapper {}
+
+#my-posts-home section.spotlight {
+    padding: 0 0 5% 0;
+}
+
+#my-posts-home section.spotlight h3 {
+    font-size: 30px;
+    margin-bottom: 2%;
+    color: #000;
+    font-weight: 700;
+}
+
+#my-posts-home section.spotlight ul.posts {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+#my-posts-home section.spotlight ul.posts li.post {
+    border: 2px solid #dfdfdf;
+    border-radius: 10px;
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+#my-posts-home section.spotlight ul.posts li.post:last-child {
+    margin: 0;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top div.buttons {
+    display: flex;
+    margin-right: -15px;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top a {
+    border-radius: 5px;
+    padding: 13px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top a.danger {
+    background: #e96a6a;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top a.warning {
+    background: #f2a12e;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.top a.success {
+    background: #5aaa79;
+}
+
+#my-posts-home section.spotlight ul.posts li.post p.description {
+    font-size: 18px;
+    color: #898a8a;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.bottom a.view {
+    display: flex;
+    align-items: center;
+    background: #5bab7b;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.bottom a.view span {
+    transform: rotate(90deg);
+    width: 14px;
+    margin-left: 12px;
+}
+
+#my-posts-home section.spotlight ul.posts li.post div.bottom p.date {
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#my-posts-home div#confirm {
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    right: 50%;
+    background: #f3efef;
+    padding: 5% 2%;
+    left: 50%;
+    transform: scale(0);
+    min-width: 1000px;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+#my-posts-home div#confirm.active {
+    transform: translatex(-50%) scale(1);
+}
+
+#my-posts-home div#confirm div.icon {
+    width: 100px;
+    margin: 0 auto 10%;
+}
+
+#my-posts-home div#confirm p.head {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3%;
+    color: #232222;
+}
+
+#my-posts-home div#confirm p.sub-head {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5%;
+    color: #616161;
+}
+
+#my-posts-home div#confirm div.buttons {
+    display: flex;
+    align-items: center;
+}
+
+#my-posts-home div#confirm div.buttons a {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#my-posts-home div#confirm div.buttons a.delete {
+    background-color: #5aab7b;
+    margin-left: auto;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#my-posts-home div#confirm div.buttons a.delete span {
+    margin: 0 10px 5px 0;
+    width: 15px;
+}
+
+#my-posts-home div#confirm div.buttons a.cancel {
+    background-color: #e96a6a;
+    border-radius: 8px;
+    margin-right: auto;
+}
+
+#my-posts-home div#deleted {
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    right: 50%;
+    background: #f3efef;
+    padding: 5% 2%;
+    left: 50%;
+    transform: scale(0);
+    min-width: 1000px;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+#my-posts-home div#deleted.active {
+    transform: translatex(-50%) scale(1);
+}
+
+#my-posts-home div#deleted div.icon {
+    width: 100px;
+    margin: 0 auto 10%;
+}
+
+#my-posts-home div#deleted p.head {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 3%;
+    color: #232222;
+}
+
+#my-posts-home div#deleted a.cancel {
+    background-color: #e96a6a;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+}
+
+div.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transform: scale(0);
+}
+
+div.overlay.active {
+    transform: scale(1);
+}
+
+/* myposts-page css  completed */
+
+#auth-home {
+    padding: 3% 0 5%;
+    position: relative;
+}
+
+#auth-home .wrapper {}
+
+#auth-home header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+
+#auth-home header h1 {
+    width: 150px;
+}
+
+#auth-home header h1 a {
+    display: block;
+}
+
+#auth-home header a.login {
+    background-color: #5aab7b;
+    width: 8%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+#auth-home section.spotlight {
+    width: 100%;
+    padding: 4% 4% 0;
+}
+
+#auth-home section.spotlight form.authenticate {
+    width: 45%;
+    margin: 0 auto;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+#auth-home section.spotlight form.authenticate h4.head {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#auth-home section.spotlight form.authenticate p.subhead {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #737373;
+}
+
+#auth-home section.spotlight form.authenticate p.login-subhead {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15%;
+    color: #737373;
+}
+
+#auth-home section.spotlight form.authenticate input {
+    border: 2px solid #ececec;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 3%;
+    font-size: 16px;
+}
+
+#auth-home section.spotlight form.authenticate input.first-name {
+    width: 49%;
+    margin-right: 1%;
+}
+
+#auth-home section.spotlight form.authenticate input.last-name {
+    width: 49%;
+}
+
+#auth-home section.spotlight form.authenticate input.email {
+    width: 100%;
+}
+
+#auth-home section.spotlight form.authenticate input.username {
+    width: 100%;
+}
+
+#auth-home section.spotlight form.authenticate input.password {
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+#auth-home section.spotlight form.authenticate a.forget {
+    width: 100%;
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #737373;
+    font-weight: 700;
+    margin-bottom: 8%;
+}
+
+#auth-home section.spotlight form.authenticate input.login-password {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+#auth-home section.spotlight form.authenticate input.submit {
+    background: #5bab7b;
+    width: 100%;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#auth-home section.spotlight form.authenticate p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#auth-home section.spotlight form.authenticate p a {
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* login, signup-page css  completed */
+
+@media all and (max-width: 1280px) {
+    #home section.spotlight div.all-posts div.post-section {
+        width: 72%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li {
+        width: 48%;
+        margin-bottom: 7%;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section {
+        width: 28%;
+    }
+
+    #home header a.login,
+    #single-page-home header a.login {
+        width: 14%;
+        font-size: 18px;
+    }
+
+    /* index 1280px responsive  completed */
+
+    #edit-post-home header a.login {
+        width: 12%;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 17%;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 13%;
+    }
+
+    /* edit-post 1280px responsive  completed */
+    #my-posts-home section.spotlight ul.posts li.post p.description {
+        font-size: 18px;
+        margin-bottom: 3%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.bottom p.date {
+        font-size: 18px;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.bottom a.view {
+        font-size: 18px;
+    }
+
+    div.pagination div.pages {
+        width: 30%;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 900px;
+    }
+
+    /* my-posts 1280px responsive  completed */
+
+    #auth-home section.spotlight form.authenticate {
+        width: 65%;
+    }
+}
+
+@media all and (max-width: 1080px) {
+    header div#hamburger-icon {
+        display: block;
+        width: 35px;
+    }
+
+    header a.login {
+        margin-right: 2%;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section {
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        right: -100%;
+        padding: 5%;
+        width: 450px;
+        z-index: 2;
+        transition: all 0.3s ease-in-out 0s;
+        top: 0;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section.active {
+        right: 0;
+    }
+
+    #home section.spotlight div.all-posts div.post-section {
+        width: 100%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li {
+        width: 32%;
+    }
+
+    div.pagination {
+        width: 100%;
+    }
+
+    #single-page-home section.single-page-spotlight div.details span.published {
+        margin-right: 5%;
+    }
+
+    #home div#close.active {
+        right: 465px;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li div.bottom a.design {
+        padding: 3% 4%;
+    }
+
+    /* index 1080px responsive  completed */
+
+    #edit-post-home section.spotlight h3 {
+        margin-bottom: 4%;
+    }
+
+    #edit-post-home section.spotlight ul.posts li.post div.top h5.title {
+        font-size: 26px;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 19%;
+    }
+
+    /* edit-post 1080px responsive  completed */
+
+    #my-posts-home section.spotlight h3 {
+        margin-bottom: 4%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+        font-size: 26px;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 750px;
+    }
+
+    /* my-posts 1080px responsive  completed */
+
+    #auth-home section.spotlight form.authenticate {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 980px) {
+    header h1 {
+        width: 100px;
+    }
+
+    header a.login {
+        width: 16%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li {
+        width: 48%;
+    }
+
+    div.pagination div.pages {
+        width: 25%;
+    }
+
+    #home div#close.active {
+        right: 61%;
+    }
+
+    header a.login {
+        margin-right: 5%;
+    }
+
+    /* index 980px responsive  completed */
+
+    #single-page-home section.single-page-spotlight div.details span.published p.written {
+        font-size: 16px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details span.published p.name {
+        font-size: 22px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social li a span.link {
+        width: 15px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social li.social-media {
+        width: 42px;
+        padding: 8px;
+    }
+
+    /* single-page 980px responsive  completed */
+
+    header h1 {
+        width: 100px;
+    }
+
+    header a.login {
+        width: 18%;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 16%;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 25%;
+    }
+
+    /* edit-post 980px responsive  completed */
+
+    #my-posts-home header h1 {
+        width: 100px;
+    }
+
+    #my-posts-home header a.login {
+        width: 18%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top {
+        flex-wrap: wrap-reverse;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    div.pagination div.pages {
+        width: 35%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post {
+        margin-bottom: 5%;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        width: 60%;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 650px;
+    }
+
+    /* my-posts 980px responsive  completed */
+
+    #auth-home header h1 {
+        width: 100px;
+    }
+
+    #auth-home header a.login {
+        width: 18%;
+    }
+
+    #auth-home section.spotlight form.authenticate {
+        width: 75%;
+    }
+
+    #auth-home section.spotlight form.authenticate input.first-name,
+    #auth-home section.spotlight form.authenticate input.last-name {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    #home header,
+    #single-page-home header {
+        margin-bottom: 7%;
+    }
+
+    #home section.spotlight h3 {
+        margin-bottom: 4%;
+    }
+
+    #home header a.login,
+    #single-page-home header a.login {
+        width: 18%;
+        font-size: 16px;
+    }
+
+    div.pagination div.pages {
+        width: 35%;
+    }
+
+    #home div#close.active {
+        display: none;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section {
+        width: 350px;
+        padding: 10% 5% 5%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts {
+        margin-bottom: 7%;
+    }
+
+    /* index 768px responsive  completed */
+
+    #single-page-home section.single-page-spotlight div.blog-category {
+        margin-bottom: 5%;
+    }
+
+    #single-page-home section.single-page-spotlight h3.title {
+        margin-bottom: 4%;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social li {
+        margin-right: 10px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details span.published p.name {
+        font-size: 20px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details {
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social {
+        margin: 3% 0 0 auto;
+    }
+
+    /* single-page 768px responsive  completed */
+
+    header {
+        margin-bottom: 10%;
+    }
+
+    #edit-post-home section.spotlight h3 {
+        margin-bottom: 7%;
+    }
+
+    #edit-post-home section.spotlight form div.title input {
+        font-size: 18px;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 27%;
+    }
+
+    #edit-post-home section.spotlight form input.input {
+        font-size: 18px;
+    }
+
+    #edit-post-home section.spotlight form input.input {
+        font-size: 18px;
+    }
+
+    #edit-post-home section.spotlight form p.subheads {
+        font-size: 16px;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 22%;
+    }
+
+    /* edit-post 768px responsive  completed */
+
+    #my-posts-home header {
+        margin-bottom: 7%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post p.description {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #my-posts-home div#confirm p.head,
+    #my-posts-home div#deleted p.head {
+        font-size: 22px;
+    }
+
+    #my-posts-home div#confirm p.sub-head {
+        font-size: 16px;
+    }
+
+    #my-posts-home div#confirm div.buttons a {
+        font-size: 16px;
+    }
+
+    #my-posts-home div#deleted a.cancel {
+        width: 35%;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 550px;
+    }
+
+    /* my-posts 768px responsive  completed */
+
+    #auth-home header {
+        margin-bottom: 10%;
+    }
+
+    #auth-home section.spotlight form.authenticate p {
+        font-size: 14px;
+    }
+
+    #auth-home section.spotlight form.authenticate p a {
+        font-size: 14px;
+    }
+
+    #auth-home section.spotlight form.authenticate h4.head {
+        font-size: 30px;
+    }
+
+    #auth-home section.spotlight form.authenticate p.subhead {
+        font-size: 15px;
+    }
+
+    #auth-home section.spotlight form.authenticate {
+        padding: 8% 5%;
+    }
+}
+
+@media all and (max-width: 640px) {
+
+    #home,
+    #single-page-home {
+        padding: 7% 0;
+    }
+
+    #home header a.login,
+    #single-page-home header a.login {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li:nth-last-child(-n + 3) {
+        margin-bottom: 10%;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li:last-child {
+        margin-bottom: 0;
+    }
+
+    div.pagination div.pages {
+        display: none;
+    }
+
+    #home section.spotlight {
+        padding: 0 0 7%;
+    }
+
+    #home header div#hamburger-icon {
+        width: 25px;
+    }
+
+    #home section.spotlight div.all-posts ul.posts li div.bottom a.design {
+        padding: 2% 4%;
+        font-size: 14px;
+    }
+
+    /* home 640px responsive  completed */
+
+    #single-page-home section.single-page-spotlight div.details {
+        flex-wrap: wrap;
+    }
+
+    #single-page-home section.single-page-spotlight {
+        padding: 7% 0px;
+    }
+
+    #single-page-home section.single-page-spotlight div.post-thumbnail {
+        margin-bottom: 5%;
+    }
+
+    /* single-page 640px responsive  completed */
+
+    #edit-post-home {
+        padding: 7% 0;
+    }
+
+    header a.login {
+        width: 23%;
+    }
+
+    #edit-post-home section.spotlight form div.title {
+        margin-bottom: 7%;
+    }
+
+    #edit-post-home section.spotlight form div.description {
+        margin-bottom: 7%;
+    }
+
+    #edit-post-home section.spotlight form input.input {
+        margin-bottom: 7%;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 37%;
+    }
+
+    #edit-post-home section.spotlight form div.title input {
+        font-size: 16px;
+    }
+
+    #edit-post-home section.spotlight form input.input {
+        font-size: 16px;
+    }
+
+    #edit-post-home section.spotlight form label {
+        font-size: 16px;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 25%;
+    }
+
+    /* edit-post 640px responsive  completed */
+
+    #my-posts-home {
+        padding: 7% 0;
+    }
+
+    #my-posts-home header a.login {
+        width: 23%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top a {
+        width: 35px;
+        padding: 11px;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+        margin-top: 5%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post {
+        padding: 5%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post p.description {
+        font-size: 16px;
+        margin-bottom: 8%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+        font-size: 23px;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.bottom p.date {
+        font-size: 15px;
+    }
+
+    div.pagination div.pages {
+        display: none;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top {
+        margin-bottom: 7%;
+    }
+
+    div.pagination a.prev,
+    div.pagination a.next {
+        font-size: 16px;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        width: 80%;
+    }
+
+    #my-posts-home div#deleted a.cancel {
+        width: 40%;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 400px;
+    }
+
+    /* my-posts 640px responsive  completed */
+
+    #auth-home {
+        padding: 7% 0;
+    }
+
+    #auth-home header {
+        margin-bottom: 20%;
+    }
+
+    #auth-home header a.login {
+        width: 23%;
+    }
+
+    #auth-home section.spotlight form.authenticate {
+        width: 100%;
+    }
+
+    #auth-home section.spotlight form.authenticate h4.head {
+        font-size: 30px;
+    }
+
+    #auth-home section.spotlight form.authenticate p.subhead,
+    #auth-home section.spotlight form.authenticate p.login-subhead {
+        font-size: 14px;
+    }
+
+    #auth-home section.spotlight form.authenticate input.submit {
+        font-size: 16px;
+    }
+
+    #auth-home section.spotlight form.authenticate a.forget {
+        font-size: 14px;
+        margin-bottom: 12%;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    #home header a.login,
+    #single-page-home header a.login {
+        width: 23%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    #home section.spotlight h3,
+    #home section.spotlight div.all-posts ul.posts li div.details h3.head a {
+        font-size: 25px;
+    }
+
+    #home header h1,
+    #single-page-home header h1 {
+        width: 75px;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section {
+        width: 280px;
+    }
+
+    /* index 480px responsive  completed */
+
+    #single-page-home section.single-page-spotlight div.blog-category span.category {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    #single-page-home section.single-page-spotlight div.blog-category span.read {
+        font-size: 14px;
+    }
+
+    #single-page-home section.single-page-spotlight h3.title {
+        font-size: 30px;
+    }
+
+    #single-page-home section.single-page-spotlight p.description {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social {
+        margin: 5% auto 0;
+    }
+
+    #single-page-home section.single-page-spotlight div.details span.published {
+        margin-right: 7%;
+    }
+
+    #single-page-home section.single-page-spotlight p.detailed-description {
+        font-size: 14px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social li a {
+        font-size: 16px;
+    }
+
+    /* single-page 480px responsive  completed */
+
+    header a.login {
+        width: 30%;
+    }
+
+    #edit-post-home section.spotlight h3 {
+        font-size: 25px;
+    }
+
+    header h1 {
+        width: 75px;
+    }
+
+    header a.login {
+        font-size: 16px;
+    }
+
+    #edit-post-home section.spotlight h3 {
+        margin-bottom: 18%;
+    }
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 50%;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 30%;
+    }
+
+    /* edit-post 480px responsive  completed */
+
+    #my-posts-home section.spotlight h3 {
+        font-size: 25px;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.top h5.title {
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post div.bottom a.view {
+        font-size: 16px;
+    }
+
+    div.pagination a.prev span,
+    div.pagination a.next span {
+        width: 10px;
+    }
+
+    div.pagination a.prev,
+    div.pagination a.next {
+        font-size: 14px;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        width: 90%;
+    }
+
+    #my-posts-home div#confirm p.head,
+    #my-posts-home div#deleted p.head {
+        font-size: 20px;
+    }
+
+    #my-posts-home div#confirm p.sub-head {
+        font-size: 14px;
+    }
+
+    #my-posts-home div#confirm div.buttons a {
+        font-size: 14px;
+    }
+
+    #my-posts-home div#deleted a.cancel {
+        font-size: 14px;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 330px;
+    }
+
+    /* my-posts 480px responsive  completed */
+
+    #auth-home header a.login {
+        font-size: 16px;
+    }
+
+    #auth-home section.spotlight form.authenticate h4.head {
+        font-size: 24px;
+        margin-bottom: 2%;
+    }
+
+    #auth-home section.spotlight form.authenticate p.subhead {
+        margin-bottom: 7%;
+    }
+
+    #auth-home section.spotlight {
+        padding: 0;
+    }
+
+    #auth-home section.spotlight form.authenticate {
+        padding: 7%;
+    }
+
+    #auth-home section.spotlight form.authenticate input {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 360px) {
+    #home section.spotlight {
+        padding: 0 0 10%;
+    }
+
+    div.pagination a.prev {
+        font-size: 15px;
+    }
+
+    div.pagination a.next {
+        font-size: 15px;
+    }
+
+    div.pagination a.prev span {
+        width: 12px;
+    }
+
+    div.pagination a.next span {
+        width: 12px;
+    }
+
+    #home section.spotlight div.all-posts div.filter-section {
+        width: 268px;
+    }
+
+    header a.login.my-posts {
+        display: none;
+    }
+
+    header a.login {
+        margin-left: auto;
+    }
+
+    /* index 360px responsive  completed */
+
+    #single-page-home section.single-page-spotlight div.details span.published p.name {
+        font-size: 16px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details span.published p.written {
+        font-size: 14px;
+    }
+
+    #single-page-home section.single-page-spotlight div.blog-category span.category {
+        font-size: 14px;
+    }
+
+    #single-page-home section.single-page-spotlight div.blog-category span.read span.clock {
+        width: 12px;
+        margin: 0 8px 4px 0;
+    }
+
+    #single-page-home section.single-page-spotlight div.blog-category span.read {
+        font-size: 12px;
+    }
+
+    #single-page-home section.single-page-spotlight div.details ul.social li a {
+        font-size: 14px;
+    }
+
+    /* single-page 360px responsive  completed */
+
+    #edit-post-home section.spotlight form div.description div.top div.paragraph {
+        width: 65%;
+    }
+
+    #edit-post-home section.spotlight form input[type="submit"] {
+        width: 40%;
+    }
+
+    /* edit-post 360px responsive  completed */
+
+    #my-posts-home section.spotlight ul.posts li.post div.top a {
+        width: 30px;
+        padding: 9px;
+    }
+
+    #my-posts-home section.spotlight ul.posts li.post p.description {
+        font-size: 14px;
+    }
+
+    #my-posts-home div#confirm p.head,
+    #my-posts-home div#deleted p.head {
+        font-size: 18px;
+    }
+
+    #my-posts-home div#confirm,
+    #my-posts-home div#deleted {
+        min-width: 250px;
+    }
+
+    /* my-posts 360px responsive  completed */
+
+    #auth-home section.spotlight form.authenticate h4.head {
+        font-size: 22px;
+    }
+
+    #auth-home section.spotlight form.authenticate p.subhead {
+        font-size: 12px;
+    }
+
+    #auth-home section.spotlight form.authenticate input.submit {
+        font-size: 14px;
+    }
+
+    #auth-home section.spotlight form.authenticate p {
+        font-size: 12px;
+    }
+
+    #auth-home section.spotlight form.authenticate input {
+        margin-bottom: 5%;
+    }
+
+    #auth-home section.spotlight form.authenticate input.password {
+        margin-bottom: 10%;
+    }
+}
+
+@media all and (max-width: 320px) {}
+
+.django-ckeditor-widget {
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ibm_plex_sans_thai_loopedRg";
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: "ibm_plex_sans_thai_loopedbold";
+    src: url("../fonts/ibmplexsansthailooped-bold-webfont.woff2")
+            format("woff2"),
+        url("../fonts/ibmplexsansthailooped-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ibm_plex_sans_thai_loopedRg";
+    src: url("../fonts/ibmplexsansthailooped-regular-webfont.woff2")
+            format("woff2"),
+        url("../fonts/ibmplexsansthailooped-regular-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+section.container {
+    min-height: 100vh;
+    background-color: #212121;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    padding-top: 80px;
+}
+section.container section.form_container {
+    width: 400px;
+}
+
+section.container section.form_container div.top {
+    background: #417690;
+    padding: 15px 0;
+}
+section.container section.form_container div.top h5 {
+    color: #fff;
+    text-align: center;
+}
+section.container section.form_container div.bottom {
+    padding: 25px 20px;
+    background: #121212;
+}
+section.container section.form_container div.bottom form {
+}
+section.container section.form_container div.bottom form div.input_container {
+    margin-bottom: 20px;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.input_container
+    label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.input_container
+    input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #353535;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+}
+section.container section.form_container div.bottom form div.submit_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    button {
+    padding: 8px 20px;
+    background: #609ab6;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    a {
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+section.container
+    section.form_container
+    div.bottom
+    form
+    div.submit_container
+    p.error-message,
+section.form_container div.bottom form div.submit_container .errorlist {
+    color: #999;
+    width: 100%;
+    margin: 10px 0;
+    list-style: none;
+}
+
+header {
+    padding: 25px 0;
+}
+header section.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+header section.wrapper h1 {
+    height: 60px;
+}
+header section.wrapper h1 a {
+    display: block;
+}
+header section.wrapper h1 a img {
+    display: inline-block;
+    max-width: 100%;
+    height: 60px;
+}
+header section.wrapper div.right a {
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    background: #609ab6;
+    border: none;
+}
+header div.right span {
+    margin-right: 15px;
+}
+section.main {
+    margin-top: 60px;
+}
+section.main h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+section.main div.form {
+    margin: 30px 0;
+}
+section.main div.form div.input_container {
+    margin-bottom: 20px;
+}
+section.main div.form div.input_container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+section.main div.form div.input_container input,
+section.main div.form div.input_container select,
+section.main div.form div.input_container textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid #353535;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+section.main div.form div.input_container textarea {
+    resize: none;
+}
+
+section.main div.form div.submit_container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+section.main div.form div.submit_container button {
+    padding: 8px 20px;
+    background: #609ab6;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+section.main div.form div.submit_container p.error-message,
+section.main div.form div.submit_container .errorlist {
+    color: #444;
+    width: 100%;
+    margin: 10px 0;
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ol,
+ul {
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #1c2c40;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 400;
+}
+header {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    position: relative;
+}
+header h1.left {
+    width: 100px;
+}
+header h1.left a {
+    width: 100%;
+    display: block;
+}
+header h1.left a img {
+    width: 100%;
+    display: block;
+}
+header nav.menu {
+}
+header nav.menu ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+header nav.menu ul li {
+    margin-right: 35px;
+}
+header nav.menu ul li:last-child {
+    margin-right: 0;
+}
+header nav.menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+#menu-icon {
+    display: none;
+    width: 35px;
+}
+#menu-icon img {
+    width: 100%;
+    display: block;
+}
+#mobile-menu {
+    /*display: none;*/
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background: #fff;
+    padding: 30px;
+    z-index: 2;
+    bottom: 0;
+    width: 280px;
+    padding-top: 40px;
+    transition: all 0.4s ease-in;
+}
+span.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+span.close {
+    position: fixed;
+    right: 300px;
+    top: 40px;
+    width: 32px;
+    height: 32px;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+span.close img {
+    display: block;
+    width: 100%;
+}
+span.close.active {
+    display: block;
+}
+#mobile-menu.active {
+    right: 0;
+}
+span.overlay.active {
+    display: block;
+}
+#mobile-menu ul li {
+    margin-bottom: 20px;
+}
+#mobile-menu ul li:last-child {
+    margin-bottom: 0;
+}
+#mobile-menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    display: block;
+}
+@media all and (max-width: 980px) {
+    #menu-icon {
+        display: block;
+    }
+    span.close {
+        display: block;
+    }
+    header nav.menu {
+        display: none;
+    }
+}
